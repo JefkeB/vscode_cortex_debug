@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [        
+        {
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "name": "Debug (OpenOCD)",
+            "cwd": "${workspaceFolder}",
+            "executable": ".\\build\\${workspaceFolderBasename}.elf",
+            "device":"STM32F407VG",
+            "svdFile": "${workspaceFolder}/../vsd/STM32F407.svd",
+            "showDevDebugOutput": false,
+            "configFiles": [
+                "${env:OPENOCD}/scripts/board/stm32f4discovery.cfg"
+            ],
+            "runToMain": true,
+            "preLaunchTask": "build"
+        }
+    ]
+}

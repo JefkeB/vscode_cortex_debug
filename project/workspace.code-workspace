@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "STM32F4"
+		}
+	],
+	"settings": {		
+		"cortex-debug.armToolchainPath": "${env:GNUARM}/bin",
+		"cortex-debug.openocdPath": "${env:OPENOCD}/bin/openocd.exe"
+	}
+}
