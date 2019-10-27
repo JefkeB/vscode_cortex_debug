@@ -2,10 +2,17 @@
 	"folders": [
 		{
 			"path": "STM32F4"
+		},
+		{
+			"path": "SAMD21"
 		}
 	],
 	"settings": {		
 		"cortex-debug.armToolchainPath": "${env:GNUARM}/bin",
-		"cortex-debug.openocdPath": "${env:OPENOCD}/bin/openocd.exe"
+		"cortex-debug.openocdPath": "${env:OPENOCD}/bin/openocd.exe",
+		"files.associations": {
+			"asf.h": "c",
+			"spi_interrupt.h": "c"
+		}
 	}
 }
