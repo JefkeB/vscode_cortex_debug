@@ -25,10 +25,10 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher":{
-				"base": "$gcc",
-				"fileLocation": "relative"
-			}
+            "problemMatcher": {
+                "base": "$gcc",
+                "fileLocation": "relative"
+            }
         },
         {
             "label": "clean",
@@ -37,7 +37,17 @@
                 "args": [
                     "clean"
                 ]
-            },         
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "print environment variable",
+            "windows": {
+                "command": "echo",
+                "args": [
+                    "${workspaceFolder}"
+                ]
+            },
             "problemMatcher": []
         }
     ]
