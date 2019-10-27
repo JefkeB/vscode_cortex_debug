@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "SAMD21"
+		},
+		{
+			"path": "SAMD20"
 		}
 	],
 	"settings": {		

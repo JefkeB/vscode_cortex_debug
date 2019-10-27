@@ -1,0 +1,54 @@
+{
+    "version": "2.0.0",
+    "type":"process",    
+    "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "dedicated"
+    },
+    "windows": {
+        "options": {
+            "env": { "Path":"${env:MSYS}/bin;${env:GNUARM}/bin;${env:OPENOCD}/bin;;%Path%" }
+        }
+    },
+    "tasks": [
+        {
+            "label": "build",
+            "windows": {
+                "command": "make.exe",
+                "args": [
+                    "DEBUG=GDB"
+                ]
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "base": "$gcc",
+                "fileLocation": "relative"
+            }
+        },
+        {
+            "label": "clean",
+            "windows": {
+                "command": "make.exe",
+                "args": [
+                    "clean"
+                ]
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "print environment variable",
+            "windows": {
+                "command": "echo",
+                "args": [
+                    "${workspaceFolder}"
+                ]
+            },
+            "problemMatcher": []
+        }
+    ]
+}

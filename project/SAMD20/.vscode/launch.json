@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [        
+        {
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "name": "Debug (OpenOCD)",
+            "cwd": "${workspaceFolder}",
+            "executable": ".\\build\\${workspaceFolderBasename}.elf",
+            "device":"ATSAMD20J18",
+            "svdFile": "${workspaceFolder}/svd/ATSAMD20J18.svd",
+            "showDevDebugOutput": false,
+            "configFiles": [
+                "${env:OPENOCD}/scripts/board/atmel_samd20_xplained_pro.cfg"
+            ],
+            "runToMain": true,
+            "preLaunchTask": "build"
+        }
+    ]
+}

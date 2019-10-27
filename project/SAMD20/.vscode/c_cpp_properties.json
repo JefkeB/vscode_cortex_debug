@@ -1,0 +1,38 @@
+{    
+    "configurations": [
+        {
+            "name": "gcc",
+            "includePath": [
+                "${workspaceFolder}/Source/Config",
+                "${workspaceFolder}/Source/ASF_MOD/**",
+                "${workspaceFolder}/Source/ASF/**",
+                "${workspaceFolder}/Source"
+            ],
+            "defines": [
+                "__SAMD20J18A__",
+                "DEBUG",
+                "BOARD=USER_BOARD",
+                "ARM_MATH_CM0PLUS=true",
+                "SPI_CALLBACK_MODE=true",
+                "SYSTICK_MODE",
+                "EXTINT_CALLBACK_MODE=true",
+                "USART_CALLBACK_MODE=false",
+                "I2C_MASTER_CALLBACK_MODE=false",
+                "TC_ASYNC=true"
+            ],
+            "compilerPath": "${env:GNUARM}",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "${env:GNUARM}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        }
+    ],
+    "version": 4
+}
