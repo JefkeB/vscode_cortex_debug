@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [        
+        {
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "name": "Debug (OpenOCD)",
+            "cwd": "${workspaceRoot}",
+            "executable": "app.elf",
+            "device":"ATSAME54P20A",
+            "svdFile": "${workspaceFolder}/svd/ATSAME54P20A.svd",
+            "showDevDebugOutput": false,
+            "configFiles": [
+                "${env:OPENOCD}/share/openocd/scripts/board/microchip_same54_xplained_pro.cfg"
+            ],
+            "runToMain": true,
+            "preLaunchTask": "build"
+        }
+    ]
+}

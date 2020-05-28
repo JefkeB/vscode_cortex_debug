@@ -6094,7 +6094,7 @@ LOAD e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/n
 LOAD e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtn.o
                 0x00010000                STACK_SIZE = DEFINED (STACK_SIZE)?STACK_SIZE:DEFINED (__stack_size__)?__stack_size__:0x10000
 
-.text           0x00000000     0x23b4
+.text           0x00000000     0x237c
                 0x00000000                . = ALIGN (0x4)
                 0x00000000                _sfixed = .
  *(.vectors .vectors.*)
@@ -6109,480 +6109,478 @@ LOAD e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/n
                 0x000002a4       0x28 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtbegin.o
  .text.frame_dummy
                 0x000002cc       0x24 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtbegin.o
- .text.main     0x000002f0      0x130 main.o
+ .text.main     0x000002f0       0xf8 main.o
                 0x000002f0                main
  .text.RTC_Handler
-                0x00000420       0x1c main.o
-                0x00000420                RTC_Handler
+                0x000003e8       0x1c main.o
+                0x000003e8                RTC_Handler
  .text.HardFault_Handler
-                0x0000043c        0x2 main.o
-                0x0000043c                HardFault_Handler
- *fill*         0x0000043e        0x2 
+                0x00000404        0x2 main.o
+                0x00000404                HardFault_Handler
+ *fill*         0x00000406        0x2 
  .text.ADC1_0_Handler
-                0x00000440       0x2c main.o
-                0x00000440                ADC1_0_Handler
+                0x00000408       0x2c main.o
+                0x00000408                ADC1_0_Handler
  .text.ADC1_1_Handler
-                0x0000046c       0x2c main.o
-                0x0000046c                ADC1_1_Handler
+                0x00000434       0x2c main.o
+                0x00000434                ADC1_1_Handler
  .text.AC_Handler
-                0x00000498       0x28 main.o
-                0x00000498                AC_Handler
- .text.AC_init  0x000004c0       0x7c my_init/ac.o
-                0x000004c0                AC_init
+                0x00000460       0x28 main.o
+                0x00000460                AC_Handler
+ .text.AC_init  0x00000488       0x7c my_init/ac.o
+                0x00000488                AC_init
  .text.ADC_init
-                0x0000053c       0xc8 my_init/adc.o
-                0x0000053c                ADC_init
+                0x00000504       0xc8 my_init/adc.o
+                0x00000504                ADC_init
  .text.CCL_init
-                0x00000604      0x110 my_init/ccl.o
-                0x00000604                CCL_init
+                0x000005cc      0x110 my_init/ccl.o
+                0x000005cc                CCL_init
  .text.DAC_init
-                0x00000714       0xe8 my_init/dac.o
-                0x00000714                DAC_init
+                0x000006dc       0xe8 my_init/dac.o
+                0x000006dc                DAC_init
  .text.DPLL_init
-                0x000007fc       0xc0 my_init/dpll.o
-                0x000007fc                DPLL_init
+                0x000007c4       0xc0 my_init/dpll.o
+                0x000007c4                DPLL_init
  .text.EVSYS_init
-                0x000008bc       0x34 my_init/evsys.o
-                0x000008bc                EVSYS_init
+                0x00000884       0x34 my_init/evsys.o
+                0x00000884                EVSYS_init
  .text.GCLK_init
-                0x000008f0       0x2c my_init/gclk.o
-                0x000008f0                GCLK_init
+                0x000008b8       0x2c my_init/gclk.o
+                0x000008b8                GCLK_init
  .text.GPIO_init
-                0x0000091c       0x70 my_init/gpio.o
-                0x0000091c                GPIO_init
+                0x000008e4       0x70 my_init/gpio.o
+                0x000008e4                GPIO_init
  .text.IRQ_init
-                0x0000098c       0x7c my_init/irqs.o
-                0x0000098c                IRQ_init
+                0x00000954       0x7c my_init/irqs.o
+                0x00000954                IRQ_init
  .text.NVMCTRL_init
-                0x00000a08       0x10 my_init/nvmctrl.o
-                0x00000a08                NVMCTRL_init
+                0x000009d0       0x10 my_init/nvmctrl.o
+                0x000009d0                NVMCTRL_init
  .text.OSCCTRL_init
-                0x00000a18       0x18 my_init/oscctrl.o
-                0x00000a18                OSCCTRL_init
- .text.PM_init  0x00000a30       0x30 my_init/pm.o
-                0x00000a30                PM_init
+                0x000009e0       0x18 my_init/oscctrl.o
+                0x000009e0                OSCCTRL_init
+ .text.PM_init  0x000009f8       0x30 my_init/pm.o
+                0x000009f8                PM_init
  .text.PWM_init
-                0x00000a60       0xac my_init/pwm.o
-                0x00000a60                PWM_init
+                0x00000a28       0xac my_init/pwm.o
+                0x00000a28                PWM_init
  .text.RTC_init
-                0x00000b0c       0xac my_init/rtc.o
-                0x00000b0c                RTC_init
+                0x00000ad4       0xac my_init/rtc.o
+                0x00000ad4                RTC_init
  .text.SERCOM2_init
-                0x00000bb8       0x6c my_init/sercom.o
-                0x00000bb8                SERCOM2_init
+                0x00000b80       0x6c my_init/sercom.o
+                0x00000b80                SERCOM2_init
  .text.SERCOM2_write
-                0x00000c24       0x3c my_init/sercom.o
-                0x00000c24                SERCOM2_write
+                0x00000bec       0x3c my_init/sercom.o
+                0x00000bec                SERCOM2_write
  .text.SERCOM2_read
-                0x00000c60       0x28 my_init/sercom.o
-                0x00000c60                SERCOM2_read
+                0x00000c28       0x28 my_init/sercom.o
+                0x00000c28                SERCOM2_read
  .text.SUPC_init
-                0x00000c88       0x28 my_init/supc.o
-                0x00000c88                SUPC_init
+                0x00000c50       0x28 my_init/supc.o
+                0x00000c50                SUPC_init
  .text.Dummy_Handler
-                0x00000cb0        0x2 Device_Startup/startup_same54.o
-                0x00000cb0                EIC_5_Handler
-                0x00000cb0                SVCall_Handler
-                0x00000cb0                SERCOM0_2_Handler
-                0x00000cb0                EIC_13_Handler
-                0x00000cb0                EVSYS_0_Handler
-                0x00000cb0                TCC1_3_Handler
-                0x00000cb0                DAC_3_Handler
-                0x00000cb0                TRNG_Handler
-                0x00000cb0                TC2_Handler
-                0x00000cb0                PDEC_2_Handler
-                0x00000cb0                EIC_4_Handler
-                0x00000cb0                SERCOM3_1_Handler
-                0x00000cb0                SysTick_Handler
-                0x00000cb0                TCC2_3_Handler
-                0x00000cb0                SERCOM3_2_Handler
-                0x00000cb0                PendSV_Handler
-                0x00000cb0                TC7_Handler
-                0x00000cb0                EVSYS_3_Handler
-                0x00000cb0                PDEC_0_Handler
-                0x00000cb0                QSPI_Handler
-                0x00000cb0                NonMaskableInt_Handler
-                0x00000cb0                TCC0_0_Handler
-                0x00000cb0                EIC_3_Handler
-                0x00000cb0                MemManagement_Handler
-                0x00000cb0                DAC_2_Handler
-                0x00000cb0                SERCOM0_0_Handler
-                0x00000cb0                UsageFault_Handler
-                0x00000cb0                SERCOM4_0_Handler
-                0x00000cb0                EIC_10_Handler
-                0x00000cb0                SERCOM0_3_Handler
-                0x00000cb0                EIC_11_Handler
-                0x00000cb0                EIC_9_Handler
-                0x00000cb0                OSC32KCTRL_Handler
-                0x00000cb0                TCC2_1_Handler
-                0x00000cb0                SUPC_1_Handler
-                0x00000cb0                TCC0_5_Handler
-                0x00000cb0                TCC0_6_Handler
-                0x00000cb0                SERCOM6_2_Handler
-                0x00000cb0                EVSYS_1_Handler
-                0x00000cb0                TCC1_4_Handler
-                0x00000cb0                TC6_Handler
-                0x00000cb0                DMAC_0_Handler
-                0x00000cb0                WDT_Handler
-                0x00000cb0                CAN0_Handler
-                0x00000cb0                EIC_8_Handler
-                0x00000cb0                EIC_15_Handler
-                0x00000cb0                SERCOM6_0_Handler
-                0x00000cb0                SERCOM5_0_Handler
-                0x00000cb0                TC4_Handler
-                0x00000cb0                TC1_Handler
-                0x00000cb0                OSCCTRL_4_Handler
-                0x00000cb0                SERCOM4_3_Handler
-                0x00000cb0                EIC_12_Handler
-                0x00000cb0                DMAC_4_Handler
-                0x00000cb0                TCC4_2_Handler
-                0x00000cb0                PAC_Handler
-                0x00000cb0                TCC1_0_Handler
-                0x00000cb0                USB_0_Handler
-                0x00000cb0                OSCCTRL_0_Handler
-                0x00000cb0                EIC_0_Handler
-                0x00000cb0                OSCCTRL_3_Handler
-                0x00000cb0                SERCOM4_1_Handler
-                0x00000cb0                TC3_Handler
-                0x00000cb0                Dummy_Handler
-                0x00000cb0                TCC3_0_Handler
-                0x00000cb0                TCC2_2_Handler
-                0x00000cb0                SERCOM5_1_Handler
-                0x00000cb0                TCC1_1_Handler
-                0x00000cb0                DMAC_2_Handler
-                0x00000cb0                ADC0_0_Handler
-                0x00000cb0                SERCOM0_1_Handler
-                0x00000cb0                OSCCTRL_2_Handler
-                0x00000cb0                TCC1_2_Handler
-                0x00000cb0                SERCOM7_1_Handler
-                0x00000cb0                USB_1_Handler
-                0x00000cb0                PM_Handler
-                0x00000cb0                SERCOM6_3_Handler
-                0x00000cb0                SERCOM2_3_Handler
-                0x00000cb0                DAC_4_Handler
-                0x00000cb0                TCC3_2_Handler
-                0x00000cb0                SERCOM7_0_Handler
-                0x00000cb0                TCC0_2_Handler
-                0x00000cb0                DMAC_1_Handler
-                0x00000cb0                TCC4_0_Handler
-                0x00000cb0                SERCOM7_3_Handler
-                0x00000cb0                GMAC_Handler
-                0x00000cb0                SDHC1_Handler
-                0x00000cb0                USB_3_Handler
-                0x00000cb0                SERCOM7_2_Handler
-                0x00000cb0                CAN1_Handler
-                0x00000cb0                TCC2_0_Handler
-                0x00000cb0                PDEC_1_Handler
-                0x00000cb0                TCC4_1_Handler
-                0x00000cb0                SERCOM5_3_Handler
-                0x00000cb0                USB_2_Handler
-                0x00000cb0                SERCOM6_1_Handler
-                0x00000cb0                SDHC0_Handler
-                0x00000cb0                SERCOM1_1_Handler
-                0x00000cb0                I2S_Handler
-                0x00000cb0                EIC_2_Handler
-                0x00000cb0                PCC_Handler
-                0x00000cb0                DAC_0_Handler
-                0x00000cb0                TCC0_1_Handler
-                0x00000cb0                SERCOM1_3_Handler
-                0x00000cb0                EIC_6_Handler
-                0x00000cb0                OSCCTRL_1_Handler
-                0x00000cb0                SERCOM1_0_Handler
-                0x00000cb0                PUKCC_Handler
-                0x00000cb0                SERCOM2_1_Handler
-                0x00000cb0                SERCOM1_2_Handler
-                0x00000cb0                SERCOM3_0_Handler
-                0x00000cb0                EIC_1_Handler
-                0x00000cb0                SERCOM4_2_Handler
-                0x00000cb0                EVSYS_4_Handler
-                0x00000cb0                EIC_7_Handler
-                0x00000cb0                NVMCTRL_1_Handler
-                0x00000cb0                SERCOM5_2_Handler
-                0x00000cb0                SERCOM3_3_Handler
-                0x00000cb0                ADC0_1_Handler
-                0x00000cb0                SERCOM2_2_Handler
-                0x00000cb0                TCC3_1_Handler
-                0x00000cb0                EIC_14_Handler
-                0x00000cb0                DAC_1_Handler
-                0x00000cb0                NVMCTRL_0_Handler
-                0x00000cb0                MCLK_Handler
-                0x00000cb0                EVSYS_2_Handler
-                0x00000cb0                SUPC_0_Handler
-                0x00000cb0                BusFault_Handler
-                0x00000cb0                FREQM_Handler
-                0x00000cb0                TC0_Handler
-                0x00000cb0                TCC0_3_Handler
-                0x00000cb0                DMAC_3_Handler
-                0x00000cb0                DebugMonitor_Handler
-                0x00000cb0                TCC0_4_Handler
-                0x00000cb0                RAMECC_Handler
-                0x00000cb0                TC5_Handler
-                0x00000cb0                SERCOM2_0_Handler
-                0x00000cb0                AES_Handler
-                0x00000cb0                ICM_Handler
- *fill*         0x00000cb2        0x2 
+                0x00000c78        0x2 Device_Startup/startup_same54.o
+                0x00000c78                EIC_5_Handler
+                0x00000c78                SVCall_Handler
+                0x00000c78                SERCOM0_2_Handler
+                0x00000c78                EIC_13_Handler
+                0x00000c78                EVSYS_0_Handler
+                0x00000c78                TCC1_3_Handler
+                0x00000c78                DAC_3_Handler
+                0x00000c78                TRNG_Handler
+                0x00000c78                TC2_Handler
+                0x00000c78                PDEC_2_Handler
+                0x00000c78                EIC_4_Handler
+                0x00000c78                SERCOM3_1_Handler
+                0x00000c78                SysTick_Handler
+                0x00000c78                TCC2_3_Handler
+                0x00000c78                SERCOM3_2_Handler
+                0x00000c78                PendSV_Handler
+                0x00000c78                TC7_Handler
+                0x00000c78                EVSYS_3_Handler
+                0x00000c78                PDEC_0_Handler
+                0x00000c78                QSPI_Handler
+                0x00000c78                NonMaskableInt_Handler
+                0x00000c78                TCC0_0_Handler
+                0x00000c78                EIC_3_Handler
+                0x00000c78                MemManagement_Handler
+                0x00000c78                DAC_2_Handler
+                0x00000c78                SERCOM0_0_Handler
+                0x00000c78                UsageFault_Handler
+                0x00000c78                SERCOM4_0_Handler
+                0x00000c78                EIC_10_Handler
+                0x00000c78                SERCOM0_3_Handler
+                0x00000c78                EIC_11_Handler
+                0x00000c78                EIC_9_Handler
+                0x00000c78                OSC32KCTRL_Handler
+                0x00000c78                TCC2_1_Handler
+                0x00000c78                SUPC_1_Handler
+                0x00000c78                TCC0_5_Handler
+                0x00000c78                TCC0_6_Handler
+                0x00000c78                SERCOM6_2_Handler
+                0x00000c78                EVSYS_1_Handler
+                0x00000c78                TCC1_4_Handler
+                0x00000c78                TC6_Handler
+                0x00000c78                DMAC_0_Handler
+                0x00000c78                WDT_Handler
+                0x00000c78                CAN0_Handler
+                0x00000c78                EIC_8_Handler
+                0x00000c78                EIC_15_Handler
+                0x00000c78                SERCOM6_0_Handler
+                0x00000c78                SERCOM5_0_Handler
+                0x00000c78                TC4_Handler
+                0x00000c78                TC1_Handler
+                0x00000c78                OSCCTRL_4_Handler
+                0x00000c78                SERCOM4_3_Handler
+                0x00000c78                EIC_12_Handler
+                0x00000c78                DMAC_4_Handler
+                0x00000c78                TCC4_2_Handler
+                0x00000c78                PAC_Handler
+                0x00000c78                TCC1_0_Handler
+                0x00000c78                USB_0_Handler
+                0x00000c78                OSCCTRL_0_Handler
+                0x00000c78                EIC_0_Handler
+                0x00000c78                OSCCTRL_3_Handler
+                0x00000c78                SERCOM4_1_Handler
+                0x00000c78                TC3_Handler
+                0x00000c78                Dummy_Handler
+                0x00000c78                TCC3_0_Handler
+                0x00000c78                TCC2_2_Handler
+                0x00000c78                SERCOM5_1_Handler
+                0x00000c78                TCC1_1_Handler
+                0x00000c78                DMAC_2_Handler
+                0x00000c78                ADC0_0_Handler
+                0x00000c78                SERCOM0_1_Handler
+                0x00000c78                OSCCTRL_2_Handler
+                0x00000c78                TCC1_2_Handler
+                0x00000c78                SERCOM7_1_Handler
+                0x00000c78                USB_1_Handler
+                0x00000c78                PM_Handler
+                0x00000c78                SERCOM6_3_Handler
+                0x00000c78                SERCOM2_3_Handler
+                0x00000c78                DAC_4_Handler
+                0x00000c78                TCC3_2_Handler
+                0x00000c78                SERCOM7_0_Handler
+                0x00000c78                TCC0_2_Handler
+                0x00000c78                DMAC_1_Handler
+                0x00000c78                TCC4_0_Handler
+                0x00000c78                SERCOM7_3_Handler
+                0x00000c78                GMAC_Handler
+                0x00000c78                SDHC1_Handler
+                0x00000c78                USB_3_Handler
+                0x00000c78                SERCOM7_2_Handler
+                0x00000c78                CAN1_Handler
+                0x00000c78                TCC2_0_Handler
+                0x00000c78                PDEC_1_Handler
+                0x00000c78                TCC4_1_Handler
+                0x00000c78                SERCOM5_3_Handler
+                0x00000c78                USB_2_Handler
+                0x00000c78                SERCOM6_1_Handler
+                0x00000c78                SDHC0_Handler
+                0x00000c78                SERCOM1_1_Handler
+                0x00000c78                I2S_Handler
+                0x00000c78                EIC_2_Handler
+                0x00000c78                PCC_Handler
+                0x00000c78                DAC_0_Handler
+                0x00000c78                TCC0_1_Handler
+                0x00000c78                SERCOM1_3_Handler
+                0x00000c78                EIC_6_Handler
+                0x00000c78                OSCCTRL_1_Handler
+                0x00000c78                SERCOM1_0_Handler
+                0x00000c78                PUKCC_Handler
+                0x00000c78                SERCOM2_1_Handler
+                0x00000c78                SERCOM1_2_Handler
+                0x00000c78                SERCOM3_0_Handler
+                0x00000c78                EIC_1_Handler
+                0x00000c78                SERCOM4_2_Handler
+                0x00000c78                EVSYS_4_Handler
+                0x00000c78                EIC_7_Handler
+                0x00000c78                NVMCTRL_1_Handler
+                0x00000c78                SERCOM5_2_Handler
+                0x00000c78                SERCOM3_3_Handler
+                0x00000c78                ADC0_1_Handler
+                0x00000c78                SERCOM2_2_Handler
+                0x00000c78                TCC3_1_Handler
+                0x00000c78                EIC_14_Handler
+                0x00000c78                DAC_1_Handler
+                0x00000c78                NVMCTRL_0_Handler
+                0x00000c78                MCLK_Handler
+                0x00000c78                EVSYS_2_Handler
+                0x00000c78                SUPC_0_Handler
+                0x00000c78                BusFault_Handler
+                0x00000c78                FREQM_Handler
+                0x00000c78                TC0_Handler
+                0x00000c78                TCC0_3_Handler
+                0x00000c78                DMAC_3_Handler
+                0x00000c78                DebugMonitor_Handler
+                0x00000c78                TCC0_4_Handler
+                0x00000c78                RAMECC_Handler
+                0x00000c78                TC5_Handler
+                0x00000c78                SERCOM2_0_Handler
+                0x00000c78                AES_Handler
+                0x00000c78                ICM_Handler
+ *fill*         0x00000c7a        0x2 
  .text.Reset_Handler
-                0x00000cb4       0x98 Device_Startup/startup_same54.o
-                0x00000cb4                Reset_Handler
+                0x00000c7c       0x98 Device_Startup/startup_same54.o
+                0x00000c7c                Reset_Handler
  .text.delay_ms
-                0x00000d4c        0x2 utils/delay.o
-                0x00000d4c                delay_ms
+                0x00000d14        0x2 utils/delay.o
+                0x00000d14                delay_ms
  .text.delay_cycles
-                0x00000d4e        0x2 utils/delay.o
-                0x00000d4e                delay_cycles
+                0x00000d16        0x2 utils/delay.o
+                0x00000d16                delay_cycles
  .text.print_init
-                0x00000d50       0x20 utils/print.o
-                0x00000d50                print_init
- .text._read    0x00000d70       0x20 utils/print.o
-                0x00000d70                _read
- .text._write   0x00000d90       0x24 utils/print.o
-                0x00000d90                _write
- .text._sbrk    0x00000db4       0x24 utils/print.o
-                0x00000db4                _sbrk
- .text._close   0x00000dd8        0x6 utils/print.o
-                0x00000dd8                _close
- .text._fstat   0x00000dde        0xa utils/print.o
-                0x00000dde                _fstat
- .text._isatty  0x00000de8        0x4 utils/print.o
-                0x00000de8                _isatty
- .text._lseek   0x00000dec        0x4 utils/print.o
-                0x00000dec                _lseek
+                0x00000d18       0x20 utils/print.o
+                0x00000d18                print_init
+ .text._read    0x00000d38       0x20 utils/print.o
+                0x00000d38                _read
+ .text._write   0x00000d58       0x24 utils/print.o
+                0x00000d58                _write
+ .text._sbrk    0x00000d7c       0x24 utils/print.o
+                0x00000d7c                _sbrk
+ .text._close   0x00000da0        0x6 utils/print.o
+                0x00000da0                _close
+ .text._fstat   0x00000da6        0xa utils/print.o
+                0x00000da6                _fstat
+ .text._isatty  0x00000db0        0x4 utils/print.o
+                0x00000db0                _isatty
+ .text._lseek   0x00000db4        0x4 utils/print.o
+                0x00000db4                _lseek
  .text.__libc_init_array
-                0x00000df0       0x48 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-init.o)
-                0x00000df0                __libc_init_array
- .text.memset   0x00000e38       0x10 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memset.o)
-                0x00000e38                memset
- .text._puts_r  0x00000e48       0xdc e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-puts.o)
-                0x00000e48                _puts_r
- .text.puts     0x00000f24       0x10 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-puts.o)
-                0x00000f24                puts
- .text.setbuf   0x00000f34       0x10 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-setbuf.o)
-                0x00000f34                setbuf
- .text.setvbuf  0x00000f44      0x184 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-setvbuf.o)
-                0x00000f44                setvbuf
+                0x00000db8       0x48 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-init.o)
+                0x00000db8                __libc_init_array
+ .text.memset   0x00000e00       0x10 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memset.o)
+                0x00000e00                memset
+ .text._puts_r  0x00000e10       0xdc e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-puts.o)
+                0x00000e10                _puts_r
+ .text.puts     0x00000eec       0x10 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-puts.o)
+                0x00000eec                puts
+ .text.setbuf   0x00000efc       0x10 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-setbuf.o)
+                0x00000efc                setbuf
+ .text.setvbuf  0x00000f0c      0x184 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-setvbuf.o)
+                0x00000f0c                setvbuf
  .text.__swbuf_r
-                0x000010c8       0xa4 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-wbuf.o)
-                0x000010c8                __swbuf_r
+                0x00001090       0xa4 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-wbuf.o)
+                0x00001090                __swbuf_r
  .text.__swsetup_r
-                0x0000116c       0xdc e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-wsetup.o)
-                0x0000116c                __swsetup_r
+                0x00001134       0xdc e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-wsetup.o)
+                0x00001134                __swsetup_r
  .text.__sflush_r
-                0x00001248      0x10c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fflush.o)
-                0x00001248                __sflush_r
+                0x00001210      0x10c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fflush.o)
+                0x00001210                __sflush_r
  .text._fflush_r
-                0x00001354       0x78 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fflush.o)
-                0x00001354                _fflush_r
- .text.std      0x000013cc       0x48 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x0000131c       0x78 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fflush.o)
+                0x0000131c                _fflush_r
+ .text.std      0x00001394       0x48 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
  .text._cleanup_r
-                0x00001414        0xc e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x00001414                _cleanup_r
+                0x000013dc        0xc e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x000013dc                _cleanup_r
  .text.__sfmoreglue
-                0x00001420       0x2c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x00001420                __sfmoreglue
+                0x000013e8       0x2c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x000013e8                __sfmoreglue
  .text.__sfp_lock_acquire
-                0x0000144c        0xc e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x0000144c                __sfp_lock_acquire
+                0x00001414        0xc e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x00001414                __sfp_lock_acquire
  .text.__sfp_lock_release
-                0x00001458        0xc e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x00001458                __sfp_lock_release
+                0x00001420        0xc e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x00001420                __sfp_lock_release
  .text.__sinit_lock_acquire
-                0x00001464        0xc e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x00001464                __sinit_lock_acquire
+                0x0000142c        0xc e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x0000142c                __sinit_lock_acquire
  .text.__sinit_lock_release
-                0x00001470        0xc e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x00001470                __sinit_lock_release
- .text.__sinit  0x0000147c       0x70 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x0000147c                __sinit
- .text.__sfp    0x000014ec       0x8c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x000014ec                __sfp
+                0x00001438        0xc e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x00001438                __sinit_lock_release
+ .text.__sinit  0x00001444       0x70 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x00001444                __sinit
+ .text.__sfp    0x000014b4       0x8c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x000014b4                __sfp
  .text._fwalk_reent
-                0x00001578       0x3c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fwalk.o)
-                0x00001578                _fwalk_reent
+                0x00001540       0x3c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fwalk.o)
+                0x00001540                _fwalk_reent
  .text.__retarget_lock_init_recursive
-                0x000015b4        0x2 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lock.o)
-                0x000015b4                __retarget_lock_init_recursive
+                0x0000157c        0x2 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lock.o)
+                0x0000157c                __retarget_lock_init_recursive
  .text.__retarget_lock_acquire_recursive
-                0x000015b6        0x2 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lock.o)
-                0x000015b6                __retarget_lock_acquire_recursive
+                0x0000157e        0x2 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lock.o)
+                0x0000157e                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x000015b8        0x2 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lock.o)
-                0x000015b8                __retarget_lock_release_recursive
+                0x00001580        0x2 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lock.o)
+                0x00001580                __retarget_lock_release_recursive
  .text.__swhatbuf_r
-                0x000015ba       0x48 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-makebuf.o)
-                0x000015ba                __swhatbuf_r
- *fill*         0x00001602        0x2 
+                0x00001582       0x48 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-makebuf.o)
+                0x00001582                __swhatbuf_r
+ *fill*         0x000015ca        0x2 
  .text.__smakebuf_r
-                0x00001604       0x80 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-makebuf.o)
-                0x00001604                __smakebuf_r
- .text.malloc   0x00001684       0x10 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-malloc.o)
-                0x00001684                malloc
- .text._free_r  0x00001694       0x9c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-freer.o)
-                0x00001694                _free_r
+                0x000015cc       0x80 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-makebuf.o)
+                0x000015cc                __smakebuf_r
+ .text.malloc   0x0000164c       0x10 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-malloc.o)
+                0x0000164c                malloc
+ .text._free_r  0x0000165c       0x9c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-freer.o)
+                0x0000165c                _free_r
  .text._malloc_r
-                0x00001730       0xb4 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
-                0x00001730                _malloc_r
- .text._sbrk_r  0x000017e4       0x20 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-sbrkr.o)
-                0x000017e4                _sbrk_r
- .text.__sread  0x00001804       0x22 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-stdio.o)
-                0x00001804                __sread
+                0x000016f8       0xb4 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
+                0x000016f8                _malloc_r
+ .text._sbrk_r  0x000017ac       0x20 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-sbrkr.o)
+                0x000017ac                _sbrk_r
+ .text.__sread  0x000017cc       0x22 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-stdio.o)
+                0x000017cc                __sread
  .text.__swrite
-                0x00001826       0x38 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-stdio.o)
-                0x00001826                __swrite
- .text.__sseek  0x0000185e       0x24 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-stdio.o)
-                0x0000185e                __sseek
+                0x000017ee       0x38 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-stdio.o)
+                0x000017ee                __swrite
+ .text.__sseek  0x00001826       0x24 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-stdio.o)
+                0x00001826                __sseek
  .text.__sclose
-                0x00001882        0x8 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-stdio.o)
-                0x00001882                __sclose
- *fill*         0x0000188a        0x2 
+                0x0000184a        0x8 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-stdio.o)
+                0x0000184a                __sclose
+ *fill*         0x00001852        0x2 
  .text._write_r
-                0x0000188c       0x24 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-writer.o)
-                0x0000188c                _write_r
+                0x00001854       0x24 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-writer.o)
+                0x00001854                _write_r
  .text._close_r
-                0x000018b0       0x20 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-closer.o)
-                0x000018b0                _close_r
+                0x00001878       0x20 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-closer.o)
+                0x00001878                _close_r
  .text._fstat_r
-                0x000018d0       0x24 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fstatr.o)
-                0x000018d0                _fstat_r
+                0x00001898       0x24 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fstatr.o)
+                0x00001898                _fstat_r
  .text._isatty_r
-                0x000018f4       0x20 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-isattyr.o)
-                0x000018f4                _isatty_r
+                0x000018bc       0x20 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-isattyr.o)
+                0x000018bc                _isatty_r
  .text._lseek_r
-                0x00001914       0x24 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lseekr.o)
-                0x00001914                _lseek_r
+                0x000018dc       0x24 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lseekr.o)
+                0x000018dc                _lseek_r
  .text.__malloc_lock
-                0x00001938        0xc e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-mlock.o)
-                0x00001938                __malloc_lock
+                0x00001900        0xc e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-mlock.o)
+                0x00001900                __malloc_lock
  .text.__malloc_unlock
-                0x00001944        0xc e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-mlock.o)
-                0x00001944                __malloc_unlock
- .text._read_r  0x00001950       0x24 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-readr.o)
-                0x00001950                _read_r
+                0x0000190c        0xc e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-mlock.o)
+                0x0000190c                __malloc_unlock
+ .text._read_r  0x00001918       0x24 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-readr.o)
+                0x00001918                _read_r
  *(.glue_7t)
- .glue_7t       0x00001974        0x0 linker stubs
+ .glue_7t       0x0000193c        0x0 linker stubs
  *(.glue_7)
- .glue_7        0x00001974        0x0 linker stubs
+ .glue_7        0x0000193c        0x0 linker stubs
  *(.rodata .rodata* .gnu.linkonce.r.*)
  .rodata.str1.4
-                0x00001974      0x251 main.o
- *fill*         0x00001bc5        0x3 
+                0x0000193c      0x251 main.o
+ *fill*         0x00001b8d        0x3 
  .rodata.str1.4
-                0x00001bc8      0x120 my_init/ccl.o
+                0x00001b90      0x120 my_init/ccl.o
  .rodata.str1.4
-                0x00001ce8      0x137 my_init/dac.o
- *fill*         0x00001e1f        0x1 
+                0x00001cb0      0x137 my_init/dac.o
+ *fill*         0x00001de7        0x1 
  .rodata.str1.4
-                0x00001e20      0x108 my_init/dpll.o
+                0x00001de8      0x108 my_init/dpll.o
  .rodata.str1.4
-                0x00001f28      0x11f my_init/irqs.o
- *fill*         0x00002047        0x1 
+                0x00001ef0      0x11f my_init/irqs.o
+ *fill*         0x0000200f        0x1 
  .rodata.str1.4
-                0x00002048       0x4e my_init/pm.o
- *fill*         0x00002096        0x2 
+                0x00002010       0x4e my_init/pm.o
+ *fill*         0x0000205e        0x2 
  .rodata.str1.4
-                0x00002098      0x10f my_init/pwm.o
- *fill*         0x000021a7        0x1 
+                0x00002060      0x10f my_init/pwm.o
+ *fill*         0x0000216f        0x1 
  .rodata.str1.4
-                0x000021a8      0x154 my_init/rtc.o
+                0x00002170      0x154 my_init/rtc.o
  .rodata.str1.4
-                0x000022fc       0x34 my_init/supc.o
+                0x000022c4       0x34 my_init/supc.o
                                  0x31 (size before relaxing)
  .rodata._global_impure_ptr
-                0x00002330        0x4 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
-                0x00002330                _global_impure_ptr
+                0x000022f8        0x4 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
+                0x000022f8                _global_impure_ptr
  .rodata.__sf_fake_stderr
-                0x00002334       0x20 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x00002334                __sf_fake_stderr
+                0x000022fc       0x20 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x000022fc                __sf_fake_stderr
  .rodata.__sf_fake_stdin
-                0x00002354       0x20 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x00002354                __sf_fake_stdin
+                0x0000231c       0x20 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x0000231c                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x00002374       0x20 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x00002374                __sf_fake_stdout
+                0x0000233c       0x20 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x0000233c                __sf_fake_stdout
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00002394                . = ALIGN (0x4)
+                0x0000235c                . = ALIGN (0x4)
  *(.init)
- .init          0x00002394        0x4 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crti.o
-                0x00002394                _init
- .init          0x00002398        0x8 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtn.o
-                0x000023a0                . = ALIGN (0x4)
-                0x000023a0                __preinit_array_start = .
+ .init          0x0000235c        0x4 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crti.o
+                0x0000235c                _init
+ .init          0x00002360        0x8 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtn.o
+                0x00002368                . = ALIGN (0x4)
+                0x00002368                __preinit_array_start = .
  *(.preinit_array)
-                0x000023a0                __preinit_array_end = .
-                0x000023a0                . = ALIGN (0x4)
-                0x000023a0                __init_array_start = .
+                0x00002368                __preinit_array_end = .
+                0x00002368                . = ALIGN (0x4)
+                0x00002368                __init_array_start = .
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array)
- .init_array    0x000023a0        0x4 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtbegin.o
-                0x000023a4                __init_array_end = .
-                0x000023a4                . = ALIGN (0x4)
+ .init_array    0x00002368        0x4 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtbegin.o
+                0x0000236c                __init_array_end = .
+                0x0000236c                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT_BY_NAME(.ctors.*))
  *crtend.o(.ctors)
-                0x000023a4                . = ALIGN (0x4)
+                0x0000236c                . = ALIGN (0x4)
  *(.fini)
- .fini          0x000023a4        0x4 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crti.o
-                0x000023a4                _fini
- .fini          0x000023a8        0x8 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtn.o
-                0x000023b0                . = ALIGN (0x4)
-                0x000023b0                __fini_array_start = .
+ .fini          0x0000236c        0x4 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crti.o
+                0x0000236c                _fini
+ .fini          0x00002370        0x8 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtn.o
+                0x00002378                . = ALIGN (0x4)
+                0x00002378                __fini_array_start = .
  *(.fini_array)
- .fini_array    0x000023b0        0x4 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtbegin.o
+ .fini_array    0x00002378        0x4 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtbegin.o
  *(SORT_BY_NAME(.fini_array.*))
-                0x000023b4                __fini_array_end = .
+                0x0000237c                __fini_array_end = .
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT_BY_NAME(.dtors.*))
  *crtend.o(.dtors)
-                0x000023b4                . = ALIGN (0x4)
-                0x000023b4                _efixed = .
+                0x0000237c                . = ALIGN (0x4)
+                0x0000237c                _efixed = .
                 [!provide]                PROVIDE (__exidx_start = .)
 
-.vfp11_veneer   0x000023b4        0x0
- .vfp11_veneer  0x000023b4        0x0 linker stubs
+.vfp11_veneer   0x0000237c        0x0
+ .vfp11_veneer  0x0000237c        0x0 linker stubs
 
-.v4_bx          0x000023b4        0x0
- .v4_bx         0x000023b4        0x0 linker stubs
+.v4_bx          0x0000237c        0x0
+ .v4_bx         0x0000237c        0x0 linker stubs
 
-.iplt           0x000023b4        0x0
- .iplt          0x000023b4        0x0 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtbegin.o
+.iplt           0x0000237c        0x0
+ .iplt          0x0000237c        0x0 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtbegin.o
 
-.eh_frame       0x000023b4        0x0
- .eh_frame      0x000023b4        0x0 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtbegin.o
+.eh_frame       0x0000237c        0x0
+ .eh_frame      0x0000237c        0x0 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtbegin.o
 
-.rel.dyn        0x000023b4        0x0
- .rel.iplt      0x000023b4        0x0 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtbegin.o
+.rel.dyn        0x0000237c        0x0
+ .rel.iplt      0x0000237c        0x0 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtbegin.o
 
 .tm_clone_table
-                0x000023b4        0x0
+                0x0000237c        0x0
  .tm_clone_table
-                0x000023b4        0x0 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtbegin.o
+                0x0000237c        0x0 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtbegin.o
  .tm_clone_table
-                0x000023b4        0x0 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtend.o
+                0x0000237c        0x0 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtend.o
 
-.igot.plt       0x000023b4        0x0
- .igot.plt      0x000023b4        0x0 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtbegin.o
+.igot.plt       0x0000237c        0x0
+ .igot.plt      0x0000237c        0x0 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtbegin.o
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
                 [!provide]                PROVIDE (__exidx_end = .)
-                0x000023b4                . = ALIGN (0x4)
-                0x000023b4                _etext = .
+                0x0000237c                . = ALIGN (0x4)
+                0x0000237c                _etext = .
 
-.relocate       0x20000000       0xf4 load address 0x000023b4
+.relocate       0x20000000       0x64 load address 0x0000237c
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _srelocate = .
  *(.ramfunc .ramfunc.*)
- .ramfunc       0x20000000       0x90 main.o
-                0x20000000                writeRawFast
  *(.data .data.*)
  .data._impure_ptr
-                0x20000090        0x4 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
-                0x20000090                _impure_ptr
+                0x20000000        0x4 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
+                0x20000000                _impure_ptr
  .data.impure_data
-                0x20000094       0x60 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
-                0x200000f4                . = ALIGN (0x4)
-                0x200000f4                _erelocate = .
+                0x20000004       0x60 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
+                0x20000064                . = ALIGN (0x4)
+                0x20000064                _erelocate = .
 
 .bkupram        0x47000000        0x0
                 0x47000000                . = ALIGN (0x8)
@@ -6598,51 +6596,51 @@ LOAD e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/n
                 0x04000000                . = ALIGN (0x8)
                 0x04000000                _eqspi = .
 
-.bss            0x200000f4       0x38 load address 0x000024a8
-                0x200000f4                . = ALIGN (0x4)
-                0x200000f4                _sbss = .
-                0x200000f4                _szero = .
+.bss            0x20000064       0x38 load address 0x000023e0
+                0x20000064                . = ALIGN (0x4)
+                0x20000064                _sbss = .
+                0x20000064                _szero = .
  *(.bss .bss.*)
  .bss.completed.6707
-                0x200000f4        0x1 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtbegin.o
- *fill*         0x200000f5        0x3 
+                0x20000064        0x1 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtbegin.o
+ *fill*         0x20000065        0x3 
  .bss.object.6712
-                0x200000f8       0x18 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtbegin.o
- .bss           0x20000110        0x4 utils/print.o
+                0x20000068       0x18 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m/nofp/crtbegin.o
+ .bss           0x20000080        0x4 utils/print.o
  .bss.__malloc_free_list
-                0x20000114        0x4 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
-                0x20000114                __malloc_free_list
+                0x20000084        0x4 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
+                0x20000084                __malloc_free_list
  .bss.__malloc_sbrk_start
-                0x20000118        0x4 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
-                0x20000118                __malloc_sbrk_start
+                0x20000088        0x4 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
+                0x20000088                __malloc_sbrk_start
  *(COMMON)
- COMMON         0x2000011c        0x9 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lock.o)
-                0x2000011c                __lock___atexit_recursive_mutex
-                0x2000011d                __lock___arc4random_mutex
-                0x2000011e                __lock___env_recursive_mutex
-                0x2000011f                __lock___sinit_recursive_mutex
-                0x20000120                __lock___malloc_recursive_mutex
-                0x20000121                __lock___at_quick_exit_mutex
-                0x20000122                __lock___dd_hash_mutex
-                0x20000123                __lock___tz_mutex
-                0x20000124                __lock___sfp_recursive_mutex
- *fill*         0x20000125        0x3 
- COMMON         0x20000128        0x4 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-reent.o)
-                0x20000128                errno
-                0x2000012c                . = ALIGN (0x4)
-                0x2000012c                _ebss = .
-                0x2000012c                _ezero = .
+ COMMON         0x2000008c        0x9 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lock.o)
+                0x2000008c                __lock___atexit_recursive_mutex
+                0x2000008d                __lock___arc4random_mutex
+                0x2000008e                __lock___env_recursive_mutex
+                0x2000008f                __lock___sinit_recursive_mutex
+                0x20000090                __lock___malloc_recursive_mutex
+                0x20000091                __lock___at_quick_exit_mutex
+                0x20000092                __lock___dd_hash_mutex
+                0x20000093                __lock___tz_mutex
+                0x20000094                __lock___sfp_recursive_mutex
+ *fill*         0x20000095        0x3 
+ COMMON         0x20000098        0x4 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-reent.o)
+                0x20000098                errno
+                0x2000009c                . = ALIGN (0x4)
+                0x2000009c                _ebss = .
+                0x2000009c                _ezero = .
 
-.stack          0x2000012c    0x10004 load address 0x000024e0
-                0x20000130                . = ALIGN (0x8)
- *fill*         0x2000012c        0x4 
-                0x20000130                _sstack = .
-                0x20010130                . = (. + STACK_SIZE)
- *fill*         0x20000130    0x10000 
-                0x20010130                . = ALIGN (0x8)
-                0x20010130                _estack = .
-                0x20010130                . = ALIGN (0x4)
-                0x20010130                _end = .
+.stack          0x2000009c    0x10004 load address 0x00002418
+                0x200000a0                . = ALIGN (0x8)
+ *fill*         0x2000009c        0x4 
+                0x200000a0                _sstack = .
+                0x200100a0                . = (. + STACK_SIZE)
+ *fill*         0x200000a0    0x10000 
+                0x200100a0                . = ALIGN (0x8)
+                0x200100a0                _estack = .
+                0x200100a0                . = ALIGN (0x4)
+                0x200100a0                _end = .
 OUTPUT(app.elf elf32-littlearm)
 
 .ARM.attributes
@@ -6771,405 +6769,405 @@ OUTPUT(app.elf elf32-littlearm)
  .comment       0x00000068       0x69 utils/delay.o
  .comment       0x00000068       0x69 utils/print.o
 
-.debug_info     0x00000000    0x21a0c
- .debug_info    0x00000000     0x582e main.o
- .debug_info    0x0000582e     0x1703 my_init/ac.o
- .debug_info    0x00006f31     0x23e2 my_init/adc.o
- .debug_info    0x00009313     0x18d2 my_init/ccl.o
- .debug_info    0x0000abe5     0x20e6 my_init/dac.o
- .debug_info    0x0000cccb     0x1910 my_init/dpll.o
- .debug_info    0x0000e5db     0x2142 my_init/evsys.o
- .debug_info    0x0001071d      0x49f my_init/gclk.o
- .debug_info    0x00010bbc      0x85e my_init/gpio.o
- .debug_info    0x0001141a     0x1275 my_init/irqs.o
- .debug_info    0x0001268f      0xad0 my_init/nvmctrl.o
- .debug_info    0x0001315f      0xfd8 my_init/oscctrl.o
- .debug_info    0x00014137      0xdbf my_init/pm.o
- .debug_info    0x00014ef6     0x26e0 my_init/pwm.o
- .debug_info    0x000175d6     0x3615 my_init/rtc.o
- .debug_info    0x0001abeb     0x3819 my_init/sercom.o
- .debug_info    0x0001e404     0x1029 my_init/supc.o
- .debug_info    0x0001f42d      0xcaf Device_Startup/startup_same54.o
- .debug_info    0x000200dc      0xa4e utils/delay.o
- .debug_info    0x00020b2a      0xee2 utils/print.o
+.debug_info     0x00000000    0x21270
+ .debug_info    0x00000000     0x5092 main.o
+ .debug_info    0x00005092     0x1703 my_init/ac.o
+ .debug_info    0x00006795     0x23e2 my_init/adc.o
+ .debug_info    0x00008b77     0x18d2 my_init/ccl.o
+ .debug_info    0x0000a449     0x20e6 my_init/dac.o
+ .debug_info    0x0000c52f     0x1910 my_init/dpll.o
+ .debug_info    0x0000de3f     0x2142 my_init/evsys.o
+ .debug_info    0x0000ff81      0x49f my_init/gclk.o
+ .debug_info    0x00010420      0x85e my_init/gpio.o
+ .debug_info    0x00010c7e     0x1275 my_init/irqs.o
+ .debug_info    0x00011ef3      0xad0 my_init/nvmctrl.o
+ .debug_info    0x000129c3      0xfd8 my_init/oscctrl.o
+ .debug_info    0x0001399b      0xdbf my_init/pm.o
+ .debug_info    0x0001475a     0x26e0 my_init/pwm.o
+ .debug_info    0x00016e3a     0x3615 my_init/rtc.o
+ .debug_info    0x0001a44f     0x3819 my_init/sercom.o
+ .debug_info    0x0001dc68     0x1029 my_init/supc.o
+ .debug_info    0x0001ec91      0xcaf Device_Startup/startup_same54.o
+ .debug_info    0x0001f940      0xa4e utils/delay.o
+ .debug_info    0x0002038e      0xee2 utils/print.o
 
-.debug_abbrev   0x00000000     0x2e93
- .debug_abbrev  0x00000000      0x413 main.o
- .debug_abbrev  0x00000413      0x190 my_init/ac.o
- .debug_abbrev  0x000005a3      0x29d my_init/adc.o
- .debug_abbrev  0x00000840      0x2a8 my_init/ccl.o
- .debug_abbrev  0x00000ae8      0x2a8 my_init/dac.o
- .debug_abbrev  0x00000d90      0x273 my_init/dpll.o
- .debug_abbrev  0x00001003      0x262 my_init/evsys.o
- .debug_abbrev  0x00001265      0x126 my_init/gclk.o
- .debug_abbrev  0x0000138b      0x199 my_init/gpio.o
- .debug_abbrev  0x00001524      0x2b7 my_init/irqs.o
- .debug_abbrev  0x000017db      0x172 my_init/nvmctrl.o
- .debug_abbrev  0x0000194d      0x15b my_init/oscctrl.o
- .debug_abbrev  0x00001aa8      0x245 my_init/pm.o
- .debug_abbrev  0x00001ced      0x2b9 my_init/pwm.o
- .debug_abbrev  0x00001fa6      0x2aa my_init/rtc.o
- .debug_abbrev  0x00002250      0x2d5 my_init/sercom.o
- .debug_abbrev  0x00002525      0x27d my_init/supc.o
- .debug_abbrev  0x000027a2      0x1a7 Device_Startup/startup_same54.o
- .debug_abbrev  0x00002949      0x252 utils/delay.o
- .debug_abbrev  0x00002b9b      0x2f8 utils/print.o
+.debug_abbrev   0x00000000     0x2e53
+ .debug_abbrev  0x00000000      0x3d3 main.o
+ .debug_abbrev  0x000003d3      0x190 my_init/ac.o
+ .debug_abbrev  0x00000563      0x29d my_init/adc.o
+ .debug_abbrev  0x00000800      0x2a8 my_init/ccl.o
+ .debug_abbrev  0x00000aa8      0x2a8 my_init/dac.o
+ .debug_abbrev  0x00000d50      0x273 my_init/dpll.o
+ .debug_abbrev  0x00000fc3      0x262 my_init/evsys.o
+ .debug_abbrev  0x00001225      0x126 my_init/gclk.o
+ .debug_abbrev  0x0000134b      0x199 my_init/gpio.o
+ .debug_abbrev  0x000014e4      0x2b7 my_init/irqs.o
+ .debug_abbrev  0x0000179b      0x172 my_init/nvmctrl.o
+ .debug_abbrev  0x0000190d      0x15b my_init/oscctrl.o
+ .debug_abbrev  0x00001a68      0x245 my_init/pm.o
+ .debug_abbrev  0x00001cad      0x2b9 my_init/pwm.o
+ .debug_abbrev  0x00001f66      0x2aa my_init/rtc.o
+ .debug_abbrev  0x00002210      0x2d5 my_init/sercom.o
+ .debug_abbrev  0x000024e5      0x27d my_init/supc.o
+ .debug_abbrev  0x00002762      0x1a7 Device_Startup/startup_same54.o
+ .debug_abbrev  0x00002909      0x252 utils/delay.o
+ .debug_abbrev  0x00002b5b      0x2f8 utils/print.o
 
-.debug_loc      0x00000000      0x5d2
- .debug_loc     0x00000000       0xbd main.o
- .debug_loc     0x000000bd      0x10e my_init/irqs.o
- .debug_loc     0x000001cb       0xae my_init/sercom.o
- .debug_loc     0x00000279       0x46 Device_Startup/startup_same54.o
- .debug_loc     0x000002bf      0x313 utils/print.o
+.debug_loc      0x00000000      0x570
+ .debug_loc     0x00000000       0x5b main.o
+ .debug_loc     0x0000005b      0x10e my_init/irqs.o
+ .debug_loc     0x00000169       0xae my_init/sercom.o
+ .debug_loc     0x00000217       0x46 Device_Startup/startup_same54.o
+ .debug_loc     0x0000025d      0x313 utils/print.o
 
-.debug_aranges  0x00000000      0x330
+.debug_aranges  0x00000000      0x328
  .debug_aranges
-                0x00000000       0x50 main.o
+                0x00000000       0x48 main.o
  .debug_aranges
-                0x00000050       0x20 my_init/ac.o
+                0x00000048       0x20 my_init/ac.o
  .debug_aranges
-                0x00000070       0x20 my_init/adc.o
+                0x00000068       0x20 my_init/adc.o
  .debug_aranges
-                0x00000090       0x20 my_init/ccl.o
+                0x00000088       0x20 my_init/ccl.o
  .debug_aranges
-                0x000000b0       0x20 my_init/dac.o
+                0x000000a8       0x20 my_init/dac.o
  .debug_aranges
-                0x000000d0       0x20 my_init/dpll.o
+                0x000000c8       0x20 my_init/dpll.o
  .debug_aranges
-                0x000000f0       0x20 my_init/evsys.o
+                0x000000e8       0x20 my_init/evsys.o
  .debug_aranges
-                0x00000110       0x20 my_init/gclk.o
+                0x00000108       0x20 my_init/gclk.o
  .debug_aranges
-                0x00000130       0x20 my_init/gpio.o
+                0x00000128       0x20 my_init/gpio.o
  .debug_aranges
-                0x00000150       0x20 my_init/irqs.o
+                0x00000148       0x20 my_init/irqs.o
  .debug_aranges
-                0x00000170       0x20 my_init/nvmctrl.o
+                0x00000168       0x20 my_init/nvmctrl.o
  .debug_aranges
-                0x00000190       0x20 my_init/oscctrl.o
+                0x00000188       0x20 my_init/oscctrl.o
  .debug_aranges
-                0x000001b0       0x20 my_init/pm.o
+                0x000001a8       0x20 my_init/pm.o
  .debug_aranges
-                0x000001d0       0x20 my_init/pwm.o
+                0x000001c8       0x20 my_init/pwm.o
  .debug_aranges
-                0x000001f0       0x20 my_init/rtc.o
+                0x000001e8       0x20 my_init/rtc.o
  .debug_aranges
-                0x00000210       0x38 my_init/sercom.o
+                0x00000208       0x38 my_init/sercom.o
  .debug_aranges
-                0x00000248       0x20 my_init/supc.o
+                0x00000240       0x20 my_init/supc.o
  .debug_aranges
-                0x00000268       0x28 Device_Startup/startup_same54.o
+                0x00000260       0x28 Device_Startup/startup_same54.o
  .debug_aranges
-                0x00000290       0x28 utils/delay.o
+                0x00000288       0x28 utils/delay.o
  .debug_aranges
-                0x000002b8       0x78 utils/print.o
+                0x000002b0       0x78 utils/print.o
 
-.debug_ranges   0x00000000      0x208
- .debug_ranges  0x00000000       0x58 main.o
- .debug_ranges  0x00000058       0x10 my_init/ac.o
- .debug_ranges  0x00000068       0x10 my_init/adc.o
- .debug_ranges  0x00000078       0x10 my_init/ccl.o
- .debug_ranges  0x00000088       0x10 my_init/dac.o
- .debug_ranges  0x00000098       0x10 my_init/dpll.o
- .debug_ranges  0x000000a8       0x10 my_init/evsys.o
- .debug_ranges  0x000000b8       0x10 my_init/gclk.o
- .debug_ranges  0x000000c8       0x10 my_init/gpio.o
- .debug_ranges  0x000000d8       0x10 my_init/irqs.o
- .debug_ranges  0x000000e8       0x10 my_init/nvmctrl.o
- .debug_ranges  0x000000f8       0x10 my_init/oscctrl.o
- .debug_ranges  0x00000108       0x10 my_init/pm.o
- .debug_ranges  0x00000118       0x10 my_init/pwm.o
- .debug_ranges  0x00000128       0x10 my_init/rtc.o
- .debug_ranges  0x00000138       0x28 my_init/sercom.o
- .debug_ranges  0x00000160       0x10 my_init/supc.o
- .debug_ranges  0x00000170       0x18 Device_Startup/startup_same54.o
- .debug_ranges  0x00000188       0x18 utils/delay.o
- .debug_ranges  0x000001a0       0x68 utils/print.o
+.debug_ranges   0x00000000      0x1e8
+ .debug_ranges  0x00000000       0x38 main.o
+ .debug_ranges  0x00000038       0x10 my_init/ac.o
+ .debug_ranges  0x00000048       0x10 my_init/adc.o
+ .debug_ranges  0x00000058       0x10 my_init/ccl.o
+ .debug_ranges  0x00000068       0x10 my_init/dac.o
+ .debug_ranges  0x00000078       0x10 my_init/dpll.o
+ .debug_ranges  0x00000088       0x10 my_init/evsys.o
+ .debug_ranges  0x00000098       0x10 my_init/gclk.o
+ .debug_ranges  0x000000a8       0x10 my_init/gpio.o
+ .debug_ranges  0x000000b8       0x10 my_init/irqs.o
+ .debug_ranges  0x000000c8       0x10 my_init/nvmctrl.o
+ .debug_ranges  0x000000d8       0x10 my_init/oscctrl.o
+ .debug_ranges  0x000000e8       0x10 my_init/pm.o
+ .debug_ranges  0x000000f8       0x10 my_init/pwm.o
+ .debug_ranges  0x00000108       0x10 my_init/rtc.o
+ .debug_ranges  0x00000118       0x28 my_init/sercom.o
+ .debug_ranges  0x00000140       0x10 my_init/supc.o
+ .debug_ranges  0x00000150       0x18 Device_Startup/startup_same54.o
+ .debug_ranges  0x00000168       0x18 utils/delay.o
+ .debug_ranges  0x00000180       0x68 utils/print.o
 
-.debug_macro    0x00000000    0x2d95d
- .debug_macro   0x00000000      0x6eb main.o
- .debug_macro   0x000006eb      0xa96 main.o
- .debug_macro   0x00001181       0x22 main.o
- .debug_macro   0x000011a3       0x8e main.o
- .debug_macro   0x00001231       0x51 main.o
- .debug_macro   0x00001282       0xef main.o
- .debug_macro   0x00001371       0x6a main.o
- .debug_macro   0x000013db      0x1df main.o
- .debug_macro   0x000015ba       0x4e main.o
- .debug_macro   0x00001608       0x1c main.o
- .debug_macro   0x00001624       0x22 main.o
- .debug_macro   0x00001646       0xdf main.o
- .debug_macro   0x00001725     0x102d main.o
- .debug_macro   0x00002752      0x11f main.o
- .debug_macro   0x00002871      0x706 main.o
- .debug_macro   0x00002f77      0xb5b main.o
- .debug_macro   0x00003ad2      0x3c0 main.o
- .debug_macro   0x00003e92     0x2d61 main.o
- .debug_macro   0x00006bf3      0x336 main.o
- .debug_macro   0x00006f29      0x3b7 main.o
- .debug_macro   0x000072e0      0x668 main.o
- .debug_macro   0x00007948     0x143f main.o
- .debug_macro   0x00008d87      0x651 main.o
- .debug_macro   0x000093d8      0x67b main.o
- .debug_macro   0x00009a53      0x6d7 main.o
- .debug_macro   0x0000a12a      0x172 main.o
- .debug_macro   0x0000a29c      0x395 main.o
- .debug_macro   0x0000a631     0x19dd main.o
- .debug_macro   0x0000c00e       0x3a main.o
- .debug_macro   0x0000c048      0x72a main.o
- .debug_macro   0x0000c772      0xb12 main.o
- .debug_macro   0x0000d284      0x5d7 main.o
- .debug_macro   0x0000d85b      0xbc0 main.o
- .debug_macro   0x0000e41b      0x9b9 main.o
- .debug_macro   0x0000edd4      0x2a3 main.o
- .debug_macro   0x0000f077      0x8cb main.o
- .debug_macro   0x0000f942      0x1ea main.o
- .debug_macro   0x0000fb2c      0x8f4 main.o
- .debug_macro   0x00010420      0x216 main.o
- .debug_macro   0x00010636      0x3f9 main.o
- .debug_macro   0x00010a2f      0x620 main.o
- .debug_macro   0x0001104f      0x10d main.o
- .debug_macro   0x0001115c       0xb8 main.o
- .debug_macro   0x00011214     0x1df7 main.o
- .debug_macro   0x0001300b     0x2e69 main.o
- .debug_macro   0x00015e74     0x11ed main.o
- .debug_macro   0x00017061      0x50e main.o
- .debug_macro   0x0001756f      0x930 main.o
- .debug_macro   0x00017e9f     0x1ad8 main.o
- .debug_macro   0x00019977       0xe7 main.o
- .debug_macro   0x00019a5e     0x13e6 main.o
- .debug_macro   0x0001ae44      0x36a main.o
- .debug_macro   0x0001b1ae       0x94 main.o
- .debug_macro   0x0001b242       0xdc main.o
- .debug_macro   0x0001b31e       0xe2 main.o
- .debug_macro   0x0001b400       0xdc main.o
- .debug_macro   0x0001b4dc      0x149 main.o
- .debug_macro   0x0001b625      0x149 main.o
- .debug_macro   0x0001b76e       0x46 main.o
- .debug_macro   0x0001b7b4       0x4c main.o
- .debug_macro   0x0001b800       0xc4 main.o
- .debug_macro   0x0001b8c4      0x7d5 main.o
- .debug_macro   0x0001c099       0xb8 main.o
- .debug_macro   0x0001c151       0x7c main.o
- .debug_macro   0x0001c1cd      0xc20 main.o
- .debug_macro   0x0001cded       0x46 main.o
- .debug_macro   0x0001ce33      0x25b main.o
- .debug_macro   0x0001d08e      0x31a main.o
- .debug_macro   0x0001d3a8      0x170 main.o
- .debug_macro   0x0001d518       0x7c main.o
- .debug_macro   0x0001d594       0xbe main.o
- .debug_macro   0x0001d652       0x4c main.o
- .debug_macro   0x0001d69e       0x82 main.o
- .debug_macro   0x0001d720      0x1a3 main.o
- .debug_macro   0x0001d8c3       0x46 main.o
- .debug_macro   0x0001d909       0x6a main.o
- .debug_macro   0x0001d973       0x46 main.o
- .debug_macro   0x0001d9b9       0x88 main.o
- .debug_macro   0x0001da41       0x46 main.o
- .debug_macro   0x0001da87      0x24e main.o
- .debug_macro   0x0001dcd5       0x1c main.o
- .debug_macro   0x0001dcf1       0x76 main.o
- .debug_macro   0x0001dd67       0x3a main.o
- .debug_macro   0x0001dda1       0x2e main.o
- .debug_macro   0x0001ddcf      0x196 main.o
- .debug_macro   0x0001df65      0x16f main.o
- .debug_macro   0x0001e0d4      0x16f main.o
- .debug_macro   0x0001e243      0x25d main.o
- .debug_macro   0x0001e4a0      0x25d main.o
- .debug_macro   0x0001e6fd      0x25d main.o
- .debug_macro   0x0001e95a      0x25d main.o
- .debug_macro   0x0001ebb7      0x25d main.o
- .debug_macro   0x0001ee14      0x25d main.o
- .debug_macro   0x0001f071      0x25d main.o
- .debug_macro   0x0001f2ce      0x25d main.o
- .debug_macro   0x0001f52b       0x52 main.o
- .debug_macro   0x0001f57d       0xfa main.o
- .debug_macro   0x0001f677       0xfa main.o
- .debug_macro   0x0001f771       0xfa main.o
- .debug_macro   0x0001f86b       0xfa main.o
- .debug_macro   0x0001f965       0xfa main.o
- .debug_macro   0x0001fa5f       0xfa main.o
- .debug_macro   0x0001fb59       0xfa main.o
- .debug_macro   0x0001fc53       0xfa main.o
- .debug_macro   0x0001fd4d      0x148 main.o
- .debug_macro   0x0001fe95      0x124 main.o
- .debug_macro   0x0001ffb9      0x106 main.o
- .debug_macro   0x000200bf       0xee main.o
- .debug_macro   0x000201ad       0xee main.o
- .debug_macro   0x0002029b       0x2e main.o
- .debug_macro   0x000202c9      0x46a main.o
- .debug_macro   0x00020733       0x3a main.o
- .debug_macro   0x0002076d      0x59f main.o
- .debug_macro   0x00020d0c     0x4ff3 main.o
- .debug_macro   0x00025cff       0xcf main.o
- .debug_macro   0x00025dce       0x64 main.o
- .debug_macro   0x00025e32       0x18 main.o
- .debug_macro   0x00025e4a       0x35 main.o
- .debug_macro   0x00025e7f       0x34 main.o
- .debug_macro   0x00025eb3       0x16 main.o
- .debug_macro   0x00025ec9       0x97 main.o
- .debug_macro   0x00025f60      0x356 main.o
- .debug_macro   0x000262b6       0xf6 main.o
- .debug_macro   0x000263ac       0x10 main.o
- .debug_macro   0x000263bc       0x58 main.o
- .debug_macro   0x00026414       0x1f main.o
- .debug_macro   0x00026433       0x43 main.o
- .debug_macro   0x00026476       0x20 main.o
- .debug_macro   0x00026496      0x18e main.o
- .debug_macro   0x00026624       0x10 main.o
- .debug_macro   0x00026634       0x1c main.o
- .debug_macro   0x00026650       0x52 main.o
- .debug_macro   0x000266a2       0x40 main.o
- .debug_macro   0x000266e2       0x10 main.o
- .debug_macro   0x000266f2       0x40 main.o
- .debug_macro   0x00026732       0xd7 main.o
- .debug_macro   0x00026809       0x1c main.o
- .debug_macro   0x00026825       0x3d main.o
- .debug_macro   0x00026862       0x16 main.o
- .debug_macro   0x00026878      0x16f main.o
- .debug_macro   0x000269e7       0x16 main.o
- .debug_macro   0x000269fd       0x10 main.o
- .debug_macro   0x00026a0d      0x4bc my_init/ac.o
- .debug_macro   0x00026ec9      0x62e my_init/adc.o
- .debug_macro   0x000274f7      0x625 my_init/ccl.o
- .debug_macro   0x00027b1c      0x625 my_init/dac.o
- .debug_macro   0x00028141      0x625 my_init/dpll.o
- .debug_macro   0x00028766      0x624 my_init/evsys.o
- .debug_macro   0x00028d8a      0x4bc my_init/gclk.o
- .debug_macro   0x00029246      0x4bc my_init/gpio.o
- .debug_macro   0x00029702      0x625 my_init/irqs.o
- .debug_macro   0x00029d27      0x4bc my_init/nvmctrl.o
- .debug_macro   0x0002a1e3      0x4bc my_init/oscctrl.o
- .debug_macro   0x0002a69f      0x625 my_init/pm.o
- .debug_macro   0x0002acc4      0x625 my_init/pwm.o
- .debug_macro   0x0002b2e9      0x625 my_init/rtc.o
- .debug_macro   0x0002b90e      0x623 my_init/sercom.o
- .debug_macro   0x0002bf31      0x625 my_init/supc.o
- .debug_macro   0x0002c556      0x4b2 Device_Startup/startup_same54.o
- .debug_macro   0x0002ca08      0x629 utils/delay.o
- .debug_macro   0x0002d031      0x224 utils/print.o
- .debug_macro   0x0002d255       0x5e utils/print.o
- .debug_macro   0x0002d2b3       0x94 utils/print.o
- .debug_macro   0x0002d347       0x57 utils/print.o
- .debug_macro   0x0002d39e      0x35c utils/print.o
- .debug_macro   0x0002d6fa       0x16 utils/print.o
- .debug_macro   0x0002d710       0x35 utils/print.o
- .debug_macro   0x0002d745       0x16 utils/print.o
- .debug_macro   0x0002d75b       0x29 utils/print.o
- .debug_macro   0x0002d784       0x4c utils/print.o
- .debug_macro   0x0002d7d0       0x16 utils/print.o
- .debug_macro   0x0002d7e6       0x10 utils/print.o
- .debug_macro   0x0002d7f6       0x10 utils/print.o
- .debug_macro   0x0002d806       0x35 utils/print.o
- .debug_macro   0x0002d83b      0x122 utils/print.o
+.debug_macro    0x00000000    0x2d951
+ .debug_macro   0x00000000      0x6df main.o
+ .debug_macro   0x000006df      0xa96 main.o
+ .debug_macro   0x00001175       0x22 main.o
+ .debug_macro   0x00001197       0x8e main.o
+ .debug_macro   0x00001225       0x51 main.o
+ .debug_macro   0x00001276       0xef main.o
+ .debug_macro   0x00001365       0x6a main.o
+ .debug_macro   0x000013cf      0x1df main.o
+ .debug_macro   0x000015ae       0x4e main.o
+ .debug_macro   0x000015fc       0x1c main.o
+ .debug_macro   0x00001618       0x22 main.o
+ .debug_macro   0x0000163a       0xdf main.o
+ .debug_macro   0x00001719     0x102d main.o
+ .debug_macro   0x00002746      0x11f main.o
+ .debug_macro   0x00002865      0x706 main.o
+ .debug_macro   0x00002f6b      0xb5b main.o
+ .debug_macro   0x00003ac6      0x3c0 main.o
+ .debug_macro   0x00003e86     0x2d61 main.o
+ .debug_macro   0x00006be7      0x336 main.o
+ .debug_macro   0x00006f1d      0x3b7 main.o
+ .debug_macro   0x000072d4      0x668 main.o
+ .debug_macro   0x0000793c     0x143f main.o
+ .debug_macro   0x00008d7b      0x651 main.o
+ .debug_macro   0x000093cc      0x67b main.o
+ .debug_macro   0x00009a47      0x6d7 main.o
+ .debug_macro   0x0000a11e      0x172 main.o
+ .debug_macro   0x0000a290      0x395 main.o
+ .debug_macro   0x0000a625     0x19dd main.o
+ .debug_macro   0x0000c002       0x3a main.o
+ .debug_macro   0x0000c03c      0x72a main.o
+ .debug_macro   0x0000c766      0xb12 main.o
+ .debug_macro   0x0000d278      0x5d7 main.o
+ .debug_macro   0x0000d84f      0xbc0 main.o
+ .debug_macro   0x0000e40f      0x9b9 main.o
+ .debug_macro   0x0000edc8      0x2a3 main.o
+ .debug_macro   0x0000f06b      0x8cb main.o
+ .debug_macro   0x0000f936      0x1ea main.o
+ .debug_macro   0x0000fb20      0x8f4 main.o
+ .debug_macro   0x00010414      0x216 main.o
+ .debug_macro   0x0001062a      0x3f9 main.o
+ .debug_macro   0x00010a23      0x620 main.o
+ .debug_macro   0x00011043      0x10d main.o
+ .debug_macro   0x00011150       0xb8 main.o
+ .debug_macro   0x00011208     0x1df7 main.o
+ .debug_macro   0x00012fff     0x2e69 main.o
+ .debug_macro   0x00015e68     0x11ed main.o
+ .debug_macro   0x00017055      0x50e main.o
+ .debug_macro   0x00017563      0x930 main.o
+ .debug_macro   0x00017e93     0x1ad8 main.o
+ .debug_macro   0x0001996b       0xe7 main.o
+ .debug_macro   0x00019a52     0x13e6 main.o
+ .debug_macro   0x0001ae38      0x36a main.o
+ .debug_macro   0x0001b1a2       0x94 main.o
+ .debug_macro   0x0001b236       0xdc main.o
+ .debug_macro   0x0001b312       0xe2 main.o
+ .debug_macro   0x0001b3f4       0xdc main.o
+ .debug_macro   0x0001b4d0      0x149 main.o
+ .debug_macro   0x0001b619      0x149 main.o
+ .debug_macro   0x0001b762       0x46 main.o
+ .debug_macro   0x0001b7a8       0x4c main.o
+ .debug_macro   0x0001b7f4       0xc4 main.o
+ .debug_macro   0x0001b8b8      0x7d5 main.o
+ .debug_macro   0x0001c08d       0xb8 main.o
+ .debug_macro   0x0001c145       0x7c main.o
+ .debug_macro   0x0001c1c1      0xc20 main.o
+ .debug_macro   0x0001cde1       0x46 main.o
+ .debug_macro   0x0001ce27      0x25b main.o
+ .debug_macro   0x0001d082      0x31a main.o
+ .debug_macro   0x0001d39c      0x170 main.o
+ .debug_macro   0x0001d50c       0x7c main.o
+ .debug_macro   0x0001d588       0xbe main.o
+ .debug_macro   0x0001d646       0x4c main.o
+ .debug_macro   0x0001d692       0x82 main.o
+ .debug_macro   0x0001d714      0x1a3 main.o
+ .debug_macro   0x0001d8b7       0x46 main.o
+ .debug_macro   0x0001d8fd       0x6a main.o
+ .debug_macro   0x0001d967       0x46 main.o
+ .debug_macro   0x0001d9ad       0x88 main.o
+ .debug_macro   0x0001da35       0x46 main.o
+ .debug_macro   0x0001da7b      0x24e main.o
+ .debug_macro   0x0001dcc9       0x1c main.o
+ .debug_macro   0x0001dce5       0x76 main.o
+ .debug_macro   0x0001dd5b       0x3a main.o
+ .debug_macro   0x0001dd95       0x2e main.o
+ .debug_macro   0x0001ddc3      0x196 main.o
+ .debug_macro   0x0001df59      0x16f main.o
+ .debug_macro   0x0001e0c8      0x16f main.o
+ .debug_macro   0x0001e237      0x25d main.o
+ .debug_macro   0x0001e494      0x25d main.o
+ .debug_macro   0x0001e6f1      0x25d main.o
+ .debug_macro   0x0001e94e      0x25d main.o
+ .debug_macro   0x0001ebab      0x25d main.o
+ .debug_macro   0x0001ee08      0x25d main.o
+ .debug_macro   0x0001f065      0x25d main.o
+ .debug_macro   0x0001f2c2      0x25d main.o
+ .debug_macro   0x0001f51f       0x52 main.o
+ .debug_macro   0x0001f571       0xfa main.o
+ .debug_macro   0x0001f66b       0xfa main.o
+ .debug_macro   0x0001f765       0xfa main.o
+ .debug_macro   0x0001f85f       0xfa main.o
+ .debug_macro   0x0001f959       0xfa main.o
+ .debug_macro   0x0001fa53       0xfa main.o
+ .debug_macro   0x0001fb4d       0xfa main.o
+ .debug_macro   0x0001fc47       0xfa main.o
+ .debug_macro   0x0001fd41      0x148 main.o
+ .debug_macro   0x0001fe89      0x124 main.o
+ .debug_macro   0x0001ffad      0x106 main.o
+ .debug_macro   0x000200b3       0xee main.o
+ .debug_macro   0x000201a1       0xee main.o
+ .debug_macro   0x0002028f       0x2e main.o
+ .debug_macro   0x000202bd      0x46a main.o
+ .debug_macro   0x00020727       0x3a main.o
+ .debug_macro   0x00020761      0x59f main.o
+ .debug_macro   0x00020d00     0x4ff3 main.o
+ .debug_macro   0x00025cf3       0xcf main.o
+ .debug_macro   0x00025dc2       0x64 main.o
+ .debug_macro   0x00025e26       0x18 main.o
+ .debug_macro   0x00025e3e       0x35 main.o
+ .debug_macro   0x00025e73       0x34 main.o
+ .debug_macro   0x00025ea7       0x16 main.o
+ .debug_macro   0x00025ebd       0x97 main.o
+ .debug_macro   0x00025f54      0x356 main.o
+ .debug_macro   0x000262aa       0xf6 main.o
+ .debug_macro   0x000263a0       0x10 main.o
+ .debug_macro   0x000263b0       0x58 main.o
+ .debug_macro   0x00026408       0x1f main.o
+ .debug_macro   0x00026427       0x43 main.o
+ .debug_macro   0x0002646a       0x20 main.o
+ .debug_macro   0x0002648a      0x18e main.o
+ .debug_macro   0x00026618       0x10 main.o
+ .debug_macro   0x00026628       0x1c main.o
+ .debug_macro   0x00026644       0x52 main.o
+ .debug_macro   0x00026696       0x40 main.o
+ .debug_macro   0x000266d6       0x10 main.o
+ .debug_macro   0x000266e6       0x40 main.o
+ .debug_macro   0x00026726       0xd7 main.o
+ .debug_macro   0x000267fd       0x1c main.o
+ .debug_macro   0x00026819       0x3d main.o
+ .debug_macro   0x00026856       0x16 main.o
+ .debug_macro   0x0002686c      0x16f main.o
+ .debug_macro   0x000269db       0x16 main.o
+ .debug_macro   0x000269f1       0x10 main.o
+ .debug_macro   0x00026a01      0x4bc my_init/ac.o
+ .debug_macro   0x00026ebd      0x62e my_init/adc.o
+ .debug_macro   0x000274eb      0x625 my_init/ccl.o
+ .debug_macro   0x00027b10      0x625 my_init/dac.o
+ .debug_macro   0x00028135      0x625 my_init/dpll.o
+ .debug_macro   0x0002875a      0x624 my_init/evsys.o
+ .debug_macro   0x00028d7e      0x4bc my_init/gclk.o
+ .debug_macro   0x0002923a      0x4bc my_init/gpio.o
+ .debug_macro   0x000296f6      0x625 my_init/irqs.o
+ .debug_macro   0x00029d1b      0x4bc my_init/nvmctrl.o
+ .debug_macro   0x0002a1d7      0x4bc my_init/oscctrl.o
+ .debug_macro   0x0002a693      0x625 my_init/pm.o
+ .debug_macro   0x0002acb8      0x625 my_init/pwm.o
+ .debug_macro   0x0002b2dd      0x625 my_init/rtc.o
+ .debug_macro   0x0002b902      0x623 my_init/sercom.o
+ .debug_macro   0x0002bf25      0x625 my_init/supc.o
+ .debug_macro   0x0002c54a      0x4b2 Device_Startup/startup_same54.o
+ .debug_macro   0x0002c9fc      0x629 utils/delay.o
+ .debug_macro   0x0002d025      0x224 utils/print.o
+ .debug_macro   0x0002d249       0x5e utils/print.o
+ .debug_macro   0x0002d2a7       0x94 utils/print.o
+ .debug_macro   0x0002d33b       0x57 utils/print.o
+ .debug_macro   0x0002d392      0x35c utils/print.o
+ .debug_macro   0x0002d6ee       0x16 utils/print.o
+ .debug_macro   0x0002d704       0x35 utils/print.o
+ .debug_macro   0x0002d739       0x16 utils/print.o
+ .debug_macro   0x0002d74f       0x29 utils/print.o
+ .debug_macro   0x0002d778       0x4c utils/print.o
+ .debug_macro   0x0002d7c4       0x16 utils/print.o
+ .debug_macro   0x0002d7da       0x10 utils/print.o
+ .debug_macro   0x0002d7ea       0x10 utils/print.o
+ .debug_macro   0x0002d7fa       0x35 utils/print.o
+ .debug_macro   0x0002d82f      0x122 utils/print.o
 
-.debug_line     0x00000000     0x9a33
- .debug_line    0x00000000      0xa8a main.o
- .debug_line    0x00000a8a      0x6fb my_init/ac.o
- .debug_line    0x00001185      0x8d2 my_init/adc.o
- .debug_line    0x00001a57      0x84c my_init/ccl.o
- .debug_line    0x000022a3      0x85a my_init/dac.o
- .debug_line    0x00002afd      0x891 my_init/dpll.o
- .debug_line    0x0000338e      0x7af my_init/evsys.o
- .debug_line    0x00003b3d      0x67f my_init/gclk.o
- .debug_line    0x000041bc      0x6d3 my_init/gpio.o
- .debug_line    0x0000488f      0x877 my_init/irqs.o
- .debug_line    0x00005106      0x665 my_init/nvmctrl.o
- .debug_line    0x0000576b      0x684 my_init/oscctrl.o
- .debug_line    0x00005def      0x7b4 my_init/pm.o
- .debug_line    0x000065a3      0x84a my_init/pwm.o
- .debug_line    0x00006ded      0x83c my_init/rtc.o
- .debug_line    0x00007629      0x906 my_init/sercom.o
- .debug_line    0x00007f2f      0x7b7 my_init/supc.o
- .debug_line    0x000086e6      0x6ef Device_Startup/startup_same54.o
- .debug_line    0x00008dd5      0x79c utils/delay.o
- .debug_line    0x00009571      0x4c2 utils/print.o
+.debug_line     0x00000000     0x9932
+ .debug_line    0x00000000      0x989 main.o
+ .debug_line    0x00000989      0x6fb my_init/ac.o
+ .debug_line    0x00001084      0x8d2 my_init/adc.o
+ .debug_line    0x00001956      0x84c my_init/ccl.o
+ .debug_line    0x000021a2      0x85a my_init/dac.o
+ .debug_line    0x000029fc      0x891 my_init/dpll.o
+ .debug_line    0x0000328d      0x7af my_init/evsys.o
+ .debug_line    0x00003a3c      0x67f my_init/gclk.o
+ .debug_line    0x000040bb      0x6d3 my_init/gpio.o
+ .debug_line    0x0000478e      0x877 my_init/irqs.o
+ .debug_line    0x00005005      0x665 my_init/nvmctrl.o
+ .debug_line    0x0000566a      0x684 my_init/oscctrl.o
+ .debug_line    0x00005cee      0x7b4 my_init/pm.o
+ .debug_line    0x000064a2      0x84a my_init/pwm.o
+ .debug_line    0x00006cec      0x83c my_init/rtc.o
+ .debug_line    0x00007528      0x906 my_init/sercom.o
+ .debug_line    0x00007e2e      0x7b7 my_init/supc.o
+ .debug_line    0x000085e5      0x6ef Device_Startup/startup_same54.o
+ .debug_line    0x00008cd4      0x79c utils/delay.o
+ .debug_line    0x00009470      0x4c2 utils/print.o
 
-.debug_str      0x00000000    0xf8f6c
- .debug_str     0x00000000    0xf5c7e main.o
-                              0xf62f2 (size before relaxing)
- .debug_str     0x000f5c7e      0x3be my_init/ac.o
+.debug_str      0x00000000    0xf8f39
+ .debug_str     0x00000000    0xf5a9e main.o
+                              0xf60e7 (size before relaxing)
+ .debug_str     0x000f5a9e      0x3be my_init/ac.o
                               0xf0fac (size before relaxing)
- .debug_str     0x000f603c       0x17 my_init/adc.o
+ .debug_str     0x000f5e5c       0x17 my_init/adc.o
                               0xf52c8 (size before relaxing)
- .debug_str     0x000f6053       0x84 my_init/ccl.o
+ .debug_str     0x000f5e73       0x84 my_init/ccl.o
                               0xf4fbd (size before relaxing)
- .debug_str     0x000f60d7      0x1c8 my_init/dac.o
+ .debug_str     0x000f5ef7      0x1c8 my_init/dac.o
                               0xf518e (size before relaxing)
- .debug_str     0x000f629f      0x39b my_init/dpll.o
+ .debug_str     0x000f60bf      0x39b my_init/dpll.o
                               0xf4f49 (size before relaxing)
- .debug_str     0x000f663a      0x406 my_init/evsys.o
+ .debug_str     0x000f645a      0x406 my_init/evsys.o
                               0xf534f (size before relaxing)
- .debug_str     0x000f6a40        0xf my_init/gclk.o
+ .debug_str     0x000f6860        0xf my_init/gclk.o
                               0xf0a82 (size before relaxing)
- .debug_str     0x000f6a4f       0x50 my_init/gpio.o
+ .debug_str     0x000f686f      0x1fd my_init/gpio.o
                               0xf0b8c (size before relaxing)
- .debug_str     0x000f6a9f       0x6c my_init/irqs.o
+ .debug_str     0x000f6a6c       0x6c my_init/irqs.o
                               0xf532c (size before relaxing)
- .debug_str     0x000f6b0b      0x23b my_init/nvmctrl.o
+ .debug_str     0x000f6ad8      0x23b my_init/nvmctrl.o
                               0xf0c1a (size before relaxing)
- .debug_str     0x000f6d46       0x12 my_init/oscctrl.o
+ .debug_str     0x000f6d13       0x12 my_init/oscctrl.o
                               0xf0d81 (size before relaxing)
- .debug_str     0x000f6d58      0x101 my_init/pm.o
+ .debug_str     0x000f6d25      0x101 my_init/pm.o
                               0xf4c66 (size before relaxing)
- .debug_str     0x000f6e59      0x2be my_init/pwm.o
+ .debug_str     0x000f6e26      0x2be my_init/pwm.o
                               0xf5254 (size before relaxing)
- .debug_str     0x000f7117      0x14f my_init/rtc.o
+ .debug_str     0x000f70e4      0x14f my_init/rtc.o
                               0xf536b (size before relaxing)
- .debug_str     0x000f7266      0x74f my_init/sercom.o
+ .debug_str     0x000f7233      0x74f my_init/sercom.o
                               0xf578b (size before relaxing)
- .debug_str     0x000f79b5      0x159 my_init/supc.o
+ .debug_str     0x000f7982      0x159 my_init/supc.o
                               0xf4cd5 (size before relaxing)
- .debug_str     0x000f7b0e      0xb8f Device_Startup/startup_same54.o
+ .debug_str     0x000f7adb      0xb8f Device_Startup/startup_same54.o
                               0xf154d (size before relaxing)
- .debug_str     0x000f869d       0x67 utils/delay.o
+ .debug_str     0x000f866a       0x67 utils/delay.o
                               0xf4bb4 (size before relaxing)
- .debug_str     0x000f8704      0x868 utils/print.o
+ .debug_str     0x000f86d1      0x868 utils/print.o
                                0x7e5a (size before relaxing)
 
-.debug_frame    0x00000000      0xbf4
- .debug_frame   0x00000000       0xb4 main.o
- .debug_frame   0x000000b4       0x20 my_init/ac.o
- .debug_frame   0x000000d4       0x28 my_init/adc.o
- .debug_frame   0x000000fc       0x30 my_init/ccl.o
- .debug_frame   0x0000012c       0x2c my_init/dac.o
- .debug_frame   0x00000158       0x2c my_init/dpll.o
- .debug_frame   0x00000184       0x20 my_init/evsys.o
- .debug_frame   0x000001a4       0x20 my_init/gclk.o
- .debug_frame   0x000001c4       0x20 my_init/gpio.o
- .debug_frame   0x000001e4       0x2c my_init/irqs.o
- .debug_frame   0x00000210       0x20 my_init/nvmctrl.o
- .debug_frame   0x00000230       0x20 my_init/oscctrl.o
- .debug_frame   0x00000250       0x28 my_init/pm.o
- .debug_frame   0x00000278       0x2c my_init/pwm.o
- .debug_frame   0x000002a4       0x2c my_init/rtc.o
- .debug_frame   0x000002d0       0x68 my_init/sercom.o
- .debug_frame   0x00000338       0x28 my_init/supc.o
- .debug_frame   0x00000360       0x38 Device_Startup/startup_same54.o
- .debug_frame   0x00000398       0x30 utils/delay.o
- .debug_frame   0x000003c8       0xfc utils/print.o
- .debug_frame   0x000004c4       0x2c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-init.o)
- .debug_frame   0x000004f0       0x20 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memset.o)
- .debug_frame   0x00000510       0x3c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-puts.o)
- .debug_frame   0x0000054c       0x20 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-setbuf.o)
- .debug_frame   0x0000056c       0x38 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-setvbuf.o)
- .debug_frame   0x000005a4       0x40 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-wbuf.o)
- .debug_frame   0x000005e4       0x2c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-wsetup.o)
- .debug_frame   0x00000610       0x5c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fflush.o)
- .debug_frame   0x0000066c      0x14c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
- .debug_frame   0x000007b8       0x54 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fwalk.o)
- .debug_frame   0x0000080c       0xb0 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lock.o)
- .debug_frame   0x000008bc       0x58 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-makebuf.o)
- .debug_frame   0x00000914       0x30 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-malloc.o)
- .debug_frame   0x00000944       0x38 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-freer.o)
- .debug_frame   0x0000097c       0x30 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
- .debug_frame   0x000009ac       0x2c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-sbrkr.o)
- .debug_frame   0x000009d8       0x88 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-stdio.o)
- .debug_frame   0x00000a60       0x2c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-writer.o)
- .debug_frame   0x00000a8c       0x2c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-closer.o)
- .debug_frame   0x00000ab8       0x2c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fstatr.o)
- .debug_frame   0x00000ae4       0x2c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-isattyr.o)
- .debug_frame   0x00000b10       0x2c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lseekr.o)
- .debug_frame   0x00000b3c       0x30 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-mlock.o)
- .debug_frame   0x00000b6c       0x2c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-readr.o)
- .debug_frame   0x00000b98       0x5c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-reent.o)
+.debug_frame    0x00000000      0xbd0
+ .debug_frame   0x00000000       0x90 main.o
+ .debug_frame   0x00000090       0x20 my_init/ac.o
+ .debug_frame   0x000000b0       0x28 my_init/adc.o
+ .debug_frame   0x000000d8       0x30 my_init/ccl.o
+ .debug_frame   0x00000108       0x2c my_init/dac.o
+ .debug_frame   0x00000134       0x2c my_init/dpll.o
+ .debug_frame   0x00000160       0x20 my_init/evsys.o
+ .debug_frame   0x00000180       0x20 my_init/gclk.o
+ .debug_frame   0x000001a0       0x20 my_init/gpio.o
+ .debug_frame   0x000001c0       0x2c my_init/irqs.o
+ .debug_frame   0x000001ec       0x20 my_init/nvmctrl.o
+ .debug_frame   0x0000020c       0x20 my_init/oscctrl.o
+ .debug_frame   0x0000022c       0x28 my_init/pm.o
+ .debug_frame   0x00000254       0x2c my_init/pwm.o
+ .debug_frame   0x00000280       0x2c my_init/rtc.o
+ .debug_frame   0x000002ac       0x68 my_init/sercom.o
+ .debug_frame   0x00000314       0x28 my_init/supc.o
+ .debug_frame   0x0000033c       0x38 Device_Startup/startup_same54.o
+ .debug_frame   0x00000374       0x30 utils/delay.o
+ .debug_frame   0x000003a4       0xfc utils/print.o
+ .debug_frame   0x000004a0       0x2c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-init.o)
+ .debug_frame   0x000004cc       0x20 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x000004ec       0x3c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-puts.o)
+ .debug_frame   0x00000528       0x20 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-setbuf.o)
+ .debug_frame   0x00000548       0x38 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-setvbuf.o)
+ .debug_frame   0x00000580       0x40 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-wbuf.o)
+ .debug_frame   0x000005c0       0x2c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-wsetup.o)
+ .debug_frame   0x000005ec       0x5c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fflush.o)
+ .debug_frame   0x00000648      0x14c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+ .debug_frame   0x00000794       0x54 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fwalk.o)
+ .debug_frame   0x000007e8       0xb0 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lock.o)
+ .debug_frame   0x00000898       0x58 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-makebuf.o)
+ .debug_frame   0x000008f0       0x30 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-malloc.o)
+ .debug_frame   0x00000920       0x38 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x00000958       0x30 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x00000988       0x2c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x000009b4       0x88 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-stdio.o)
+ .debug_frame   0x00000a3c       0x2c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-writer.o)
+ .debug_frame   0x00000a68       0x2c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-closer.o)
+ .debug_frame   0x00000a94       0x2c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fstatr.o)
+ .debug_frame   0x00000ac0       0x2c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-isattyr.o)
+ .debug_frame   0x00000aec       0x2c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lseekr.o)
+ .debug_frame   0x00000b18       0x30 e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-mlock.o)
+ .debug_frame   0x00000b48       0x2c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-readr.o)
+ .debug_frame   0x00000b74       0x5c e:/vscodetest/tools/gnuarm/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-reent.o)
