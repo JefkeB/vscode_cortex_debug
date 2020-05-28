@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "SAMD20"
+		},
+		{
+			"path": "SAMD54"
 		}
 	],
 	"settings": {		
